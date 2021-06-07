@@ -1,13 +1,69 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "SFUIText";
+  src: local("SFUIText"), url("./fonts/SFUIText-Light.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "SFUIText-Regular";
+  src: local("SFUIText-Regular"),
+    url("./fonts/SFUIText-Regular.ttf") format("truetype");
+}
+
+.wait {
+  /* margin: 10px 2px; */
+  width: 40px;
+  height: 30px;
+}
+
+.parent-help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help {
+  background-color: #4e78f6;
+  font-family: "SFUIText";
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 50px 2px;
+  cursor: pointer;
+}
+
+.chat-item {
+  list-style: none;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  width: 300px;
+  margin: 20px 2px;
+  border-radius: 5px;
+  color: #000000;
+  padding: 5px 3px;
+  text-align: left;
+  font-family: "SFUIText";
+  font-size: 12px;
+}
+
+/* 
+.next-buttons {
+  background-color: #4e78f6;
+  font-family: "SFUIText";
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 50px 2px;
+  cursor: pointer;
+} */
